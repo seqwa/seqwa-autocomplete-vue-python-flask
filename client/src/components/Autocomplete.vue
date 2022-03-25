@@ -92,6 +92,7 @@
                     text-gray-900
                   "
                   :defaultValue="query"
+                  placeholder="search here.."
                   :displayValue="(result) => result.suggest"
                   @change="autocomplete($event.target.value)"
                 />
@@ -209,6 +210,7 @@
                 text-gray-900
               "
               @input="autocomplete($event.target.value)"
+              placeholder="search here.."
               :defaultValue="query"
             />
 
